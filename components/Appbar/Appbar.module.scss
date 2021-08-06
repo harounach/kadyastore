@@ -1,0 +1,5 @@
+@use "../../styles/abstracts/variables" as vars;
+
+.appbar {
+  background-color: vars.$primary-color;
+}
