@@ -1,6 +1,10 @@
+// Next.js components
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import Link from "next/link";
+
+// Custom components
+import styles from "./Home.module.scss";
 import Appbar from "../components/Appbar/Appbar";
 import Footer from "../components/Footer/Footer";
 
@@ -25,6 +29,39 @@ export default function Home() {
           ipsum ducimus animi amet debitis perferendis, doloremque eaque
           delectus rerum commodi autem mollitia?
         </p>
+        <h3>روابط الصفحات</h3>
+        <ul>
+          <li>
+            <Link href="/login">
+              <a className="link">تسجيل الدخول</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/register">
+              <a className="link">إنشاء حساب</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/account">
+              <a className="link">الحساب</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/cart">
+              <a className="link">العربة</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/favorite">
+              <a className="link">المفضلة</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/search">
+              <a className="link">البحث</a>
+            </Link>
+          </li>
+        </ul>
       </main>
 
       <Footer></Footer>
