@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Appbar from "../components/Appbar/Appbar";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -26,12 +27,7 @@ export default function Home() {
         </p>
       </main>
 
-      <footer className={styles.footer}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-          voluptatum esse vel.
-        </p>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }
